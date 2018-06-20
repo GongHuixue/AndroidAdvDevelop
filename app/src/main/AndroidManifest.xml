@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.huixuegong.androidadv">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
+        android:name=".architecture.util.ArchApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -34,7 +40,30 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity android:name=".architecture.mvc.view.MvcActivity"
+            android:label="@string/mvc_activity">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androidadv" />
 
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".architecture.mvp.view.MvpActivity"
+            android:label="@string/mvp_activity">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androidadv" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".architecture.mvvm.view.MvvmActivity"
+            android:label="@string/mvvm_activity">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androidadv" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

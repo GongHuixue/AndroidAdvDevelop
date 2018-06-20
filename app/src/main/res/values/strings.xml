@@ -4,4 +4,9 @@
     <!--Define memory leak-->
     <string name="mat_activity">Android Profiler/MAT Test Memory Leak</string>
     <string name="cpu_activity">Android Profiler/CPU Loading Test</string>
+
+    <!--design architecture-->
+    <string name="mvc_activity">Architecture/MVC</string>
+    <string name="mvp_activity">Architecture/MVP</string>
+    <string name="mvvm_activity">Architecture/MVVM</string>
 </resources>
