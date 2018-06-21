@@ -12,4 +12,7 @@
 
     <!--DataBase-->
     <string name="greendao_activity">DataBase/Green Dao</string>
+
+    <!--Network-->
+    <string name="network_activity">Network/OK HTTPS</string>
 </resources>

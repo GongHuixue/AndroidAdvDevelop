@@ -76,6 +76,15 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".network.okhttp.OkHttpActivity"
+            android:label="@string/network_activity">
+            <intent-filter>
+                <action android:name="com.example.huixuegong.androidadv" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
