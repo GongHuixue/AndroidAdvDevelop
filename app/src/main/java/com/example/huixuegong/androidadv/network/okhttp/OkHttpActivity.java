@@ -33,9 +33,11 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
     private OkHttpClient httpClient;
     private Request request;
     private Response response;
-    private String getMsg;
+    private static String getMsg;
 
     private String BAIDU_URI = "http://www.baidu.com";
+
+    private Handler mHandler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +92,6 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
             default:
                 break;
         }
-        updateUI();
     }
 
     public void getDataSync() {
@@ -105,11 +106,12 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
                     if(response.isSuccessful()) {
                         getMsg = response.body().string();
                     }
+                    updateUI();
                 }catch (Exception e){
                     e.printStackTrace();
                 }
             }
-        });
+        }).start();
     }
 
     public void getDataAsync() {
@@ -127,6 +129,7 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
                 if(response.isSuccessful()) {
                     getMsg = response.body().string();
                 }
+                updateUI();
             }
         });
     }
@@ -150,6 +153,7 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
                 if(response.isSuccessful()) {
                     getMsg = response.body().string();
                 }
+                updateUI();
             }
         });
     }
@@ -176,6 +180,7 @@ public class OkHttpActivity extends Activity implements View.OnClickListener{
                 if(response.isSuccessful()) {
                     getMsg = response.body().string();
                 }
+                updateUI();
             }
         });
     }
