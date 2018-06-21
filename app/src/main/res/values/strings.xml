@@ -9,4 +9,7 @@
     <string name="mvc_activity">Architecture/MVC</string>
     <string name="mvp_activity">Architecture/MVP</string>
     <string name="mvvm_activity">Architecture/MVVM</string>
+
+    <!--DataBase-->
+    <string name="greendao_activity">DataBase/Green Dao</string>
 </resources>

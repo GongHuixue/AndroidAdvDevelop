@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".database.greendao.GreenDaoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user info"
+        android:id="@+id/tv_user"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:id="@+id/button_add" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="del"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:id="@+id/button_del" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modify"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:id="@+id/button_modify" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="query"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:id="@+id/button_query" />
+
+</LinearLayout>

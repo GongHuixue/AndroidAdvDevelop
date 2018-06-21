@@ -7,6 +7,8 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 
+import com.example.huixuegong.androidadv.AdvApplication;
+
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
@@ -16,7 +18,7 @@ import java.util.Enumeration;
 public class PhoneInfo {
     private final static String TAG = PhoneInfo.class.getSimpleName();
     public static String getIPAddress() {
-        Context context = ArchApplication.getGlobalContext();
+        Context context = AdvApplication.getAppContext();
         NetworkInfo info = ((ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
         if (info != null && info.isConnected()) {
